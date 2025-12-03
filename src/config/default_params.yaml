@@ -1,0 +1,22 @@
+feature_detector:
+input_topic: /camera/image_raw
+max_keypoints: 1024
+
+
+feature_matcher:
+candidate_tile_count: 5
+min_inliers: 12
+
+
+localization_fusion:
+use_ekf: true
+
+
+planner:
+grid_resolution: 0.5
+planner_type: astar
+
+
+path_follower:
+lookahead_m: 1.0
+max_speed: 2.0

@@ -1,0 +1,5 @@
+To build:
+1. Place this folder inside a ROS2 workspace under `src/vision_localization`.
+2. From workspace root: `colcon build --symlink-install` (ensure ROS2 environment sourced).
+3. To run: `ros2 run vision_localization feature_detector` etc. Or use the provided launch file:
+`ros2 launch vision_localization bringup_launch.py`
